@@ -1,0 +1,10 @@
+@import "../../../styles/main/mixins.scss";
+
+.Header {
+  display: flex;
+  padding: rem(36) rem(32);
+  
+  img {
+    margin-right: calc(20% - 19px);
+  }
+}

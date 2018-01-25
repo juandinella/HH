@@ -1,0 +1,35 @@
+@import "../../../styles/main/mixins.scss";
+
+.Search {
+  position: relative;
+  width: 100%;
+  
+  fieldset {
+    border: none;
+    
+    input {
+      width: 100%;
+      max-width: calc(70% - 80px);
+      padding-left: rem(26);
+      height: rem(32);
+      line-height: rem(32);
+      color: #797979;
+      border: 1px solid #D5D5D5;
+      background: #fff;
+      box-sizing: border-box;
+      font-size: rem(14);
+      
+      &:focus {
+        max-width: none;
+        outline: none;
+      }
+    }
+    
+    img {
+      position: absolute;
+      top: 9px;
+      left: 9px;
+      z-index: 2;
+    }
+  }
+}
