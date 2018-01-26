@@ -1,0 +1,14 @@
+@import "../../../styles/main/mixins.scss";
+@import "../../../styles/main/config.scss";
+
+.Newsletter {
+  width: 30%;
+  padding: rem(36) rem(32);
+  flex-shrink: 0;
+
+  p {
+    font-size: rem(14);
+    line-height: rem(18);
+    margin-bottom: rem(12);
+  }
+}

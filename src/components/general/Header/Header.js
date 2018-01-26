@@ -5,7 +5,9 @@ import SearchContainer from '../../../containers/general/Search/SearchContainer'
 
 const Header = ({...props}) =>
   <header className='Header'>
-    <img src={Logo} alt='logo' width='32'/>
+    <div className="logo">
+      <img src={Logo} alt='logo' width='32'/>
+    </div>
     <SearchContainer />
   </header>
 

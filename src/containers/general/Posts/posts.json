@@ -1,0 +1,78 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "fp": true,
+      "title": "ansible-interactive-tutorial",
+      "description": "Interactive Ansible Tutorial",
+      "link": "https://github.com/turkenh/ansible-interactive-tutorial",
+      "author": "erkanerol",
+      "time": "11",
+      "votes": "123",
+      "comments": "0",
+      "tags": [
+        {
+          "id": 1,
+          "name": "media",
+          "link": "/topic/media/trending"
+        },
+        {
+          "id": 2,
+          "name": "open-source",
+          "link": "/topic/open-source/trending"
+        },
+        {
+          "id": 3,
+          "name": "shell",
+          "link": "/topic/shell/trending"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "fp": true,
+      "title": "Cobrowse.io",
+      "description": "Add screen sharing to any iOS or Android mobile app",
+      "link": "https://cobrowse.io",
+      "author": "headlessme",
+      "time": "2",
+      "votes": "22",
+      "comments": "8",
+      "tags": [
+        {
+          "id": 1,
+          "name": "mobile",
+          "link": "/topic/mobile/trending"
+        },
+        {
+          "id": 2,
+          "name": "library",
+          "link": "/topic/library/trending"
+        },
+        {
+          "id": 3,
+          "name": "development",
+          "link": "/topic/development/trending"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "fp": false,
+      "title": "Amp",
+      "description": "A text editor for your terminal, written in Rust",
+      "link": "https://amp.rs/",
+      "author": "wasted_intel",
+      "time": "4",
+      "votes": "14",
+      "comments": "0",
+      "tags": [
+        {
+          "id": 1,
+          "name": "system",
+          "link": "/topic/system/trending"
+        }
+      ]
+    }
+  ]
+}

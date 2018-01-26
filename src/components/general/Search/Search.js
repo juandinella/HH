@@ -8,7 +8,7 @@ const Search = ({...props}) => (
     onSubmit={props.handleSubmit}
     >
     <fieldset>
-      <img src={searchIcon} />
+      <img src={searchIcon} alt='search icon'/>
       <input
         ref={props.setRef}
         type='text'
