@@ -1,0 +1,123 @@
+@import "../../../styles/main/mixins.scss";
+@import "../../../styles/main/config.scss";
+
+.Topics {
+  position: relative;
+  width: 20%;
+  flex-shrink: 0;
+  padding: 0 rem(32);
+  
+  nav {
+    a {
+      display: block;
+      cursor: pointer;
+      padding: rem(5) 0;
+      white-space: nowrap;
+      text-decoration: none;
+      color: $black;
+      
+      &:hover,
+      &.active {
+        color: $main-color;
+      }
+      
+      + div {
+        display: none;
+        padding-left: rem(16);
+      }
+      
+      &.active  {
+        + div {
+          display: block;
+        }
+      }
+      
+      strong {
+        font-size: rem(14);
+        line-height: rem(24);
+        vertical-align: middle;
+      }
+      
+      span {
+        margin-right: rem(8);
+      }
+    }
+  }
+}
+
+.thumb {
+  display: inline-block;
+  width: rem(16);
+  height: rem(16);
+  vertical-align: middle;
+  background-image: url(../../../images/icons-001@2x.png);
+  background-size: 627px 16px;
+  
+  &.development {
+    background-position: -247px 0px;
+  }
+  
+  &.devops {
+    background-position: -445px 0px;
+  }
+  
+  &.database {
+    background-position: -231px 0px;
+  }
+  
+  &.api {
+    background-position: -198px 0px;
+  }
+  
+  &.library {
+    background-position: -66px 0px;
+  }
+  
+  &.system {
+    background-position: -577px 0px;
+  }
+  
+  &.security {
+    background-position: -544px 0px;
+  }
+  
+  &.apple {
+    background-position: -33px 0px;
+  }
+  
+  &.tools {
+    background-position: -594px 0px;
+  }
+  
+  &.data-science {
+    background-position: -429px 0px;
+  }
+  
+  &.blockchain {
+    background-position: -379px 0px;
+  }
+  
+  &.mobile {
+    background-position: -478px 0px;
+  }
+  
+  &.list {
+    background-position: -462px 0px;
+  }
+  
+  &.social {
+    background-position: -363px 0px;
+  }
+  
+  &.visual {
+    background-position: 0px 0px;
+  }
+  
+  &.open-source {
+    background-position: -165px 0px;
+  }
+  
+  &.all {
+    background-position: -313px 0px;
+  }
+}

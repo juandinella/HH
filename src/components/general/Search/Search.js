@@ -3,10 +3,17 @@ import './Search.css'
 import searchIcon from './search.svg'
 
 const Search = ({...props}) => (
-  <form className='Search'>
+  <form
+    className='Search'
+    onSubmit={props.handleSubmit}
+    >
     <fieldset>
       <img src={searchIcon} />
-      <input type='text' />
+      <input
+        ref={props.setRef}
+        type='text'
+        name='search'
+      />
     </fieldset>
   </form>
 )
