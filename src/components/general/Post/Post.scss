@@ -39,6 +39,16 @@
     }
   }
   
+  sup {
+    vertical-align: middle;
+    position: relative;
+    margin-left: rem(8);
+    
+    svg {
+      margin-bottom: rem(3);
+    }
+  }
+  
   h2 a {
     color: $black;
     

@@ -1,7 +1,7 @@
 import React from 'react'
 import './Post.css'
 
-const Post = ({votes, title, description,time, author, comments, tags}) =>
+const Post = ({votes, title, description,time, author, comments, tags, fp}) =>
   <article className='Post'>
     <a href="">
       <span><em>▲</em>{votes}</span>
@@ -11,7 +11,12 @@ const Post = ({votes, title, description,time, author, comments, tags}) =>
       </span>
     </a>
     <div>
-      <h2><a href="">{title}</a></h2>
+      <h2>
+        <a href="">{title}</a>
+        { 
+          (fp) ? <sup><svg width="12" height="11" viewBox="0 0 12 11"><path fill="#ff6600" d="M6 9l-3.527 1.854.674-3.927-2.853-2.781 3.943-.573 1.763-3.573 1.763 3.573 3.943.573-2.853 2.781.674 3.927z"></path></svg></sup> : ' '
+        }
+      </h2>
       <p>{description}</p>
       <summary>
         <time>{time} hours ago</time>
