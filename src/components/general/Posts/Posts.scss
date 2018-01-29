@@ -16,4 +16,27 @@
     justify-content: space-between;
     width: 100%;
   }
+  
+  footer {
+    margin: rem(40) 0 rem(60);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    
+    a {
+      color: $black;
+      display: inline-block;
+      border: 1px solid $black;
+      font-weight: 500;
+      border-radius: rem(2);
+      padding: rem(8) rem(34);
+      text-transform: uppercase;
+      font-size: rem(14);
+      
+      &:hover {
+        color: $main-color;
+        border-color: $main-color;
+      }
+    }
+  }
 }

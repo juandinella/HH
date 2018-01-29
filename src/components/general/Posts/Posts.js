@@ -22,7 +22,11 @@ function Posts({posts}) {
             return <Post {...item} key={item.id} />
           })
         }
+        <span className="expand-link">Show 4 more ▾</span>
       </section>
+      <footer>
+        <a href="">Previus Day</a>
+      </footer>
       </div>
     )
   }
