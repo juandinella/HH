@@ -47,6 +47,52 @@
     svg {
       margin-bottom: rem(3);
     }
+    
+    span {
+      display: none;
+      position: absolute;
+      font-size: rem(12);
+      line-height: rem(32);
+      padding: 0 rem(8);
+      border-radius: rem(3);
+      white-space: nowrap;
+      background: #fff;
+      top: rem(-40);
+      left: 0px;    
+      transform: translate(-50%, 0);
+      box-shadow: 0 2px 8px 0 rgba(0,0,0,0.08), 0 1px 4px 0 rgba(0,0,0,0.12);
+      
+      &:before {
+        content: '';
+        width: rem(10);
+        height: rem(10);
+        background: #fff;
+        position: absolute;
+        left: 50%;
+        margin-left: rem(1);
+        bottom: rem(-5);
+        box-shadow: 0 2px 8px 0 rgba(0,0,0,0.06), 0 1px 4px 0 rgba(0,0,0,0.12);
+        transform: rotate(45deg);
+      }
+      
+      &:after {
+        position: absolute;
+        content: '';
+        width: rem(24);
+        height: rem(8);
+        background: #fff;
+        left: 50%;
+        bottom: 0;
+        margin-left: rem(-8);
+        z-index: 2;
+      }
+    }
+    
+    &:hover {
+      span {
+        display: block;
+      }
+    }
   }
   
   h2 a {
@@ -73,6 +119,10 @@
     a {
       color: #797979;
       margin-right: rem(12);
+      
+      &:hover {
+        color: $main-color;
+      }
     }
     
     .tag {

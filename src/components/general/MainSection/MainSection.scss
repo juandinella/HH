@@ -1,3 +1,11 @@
+@import "../../../styles/main/mixins.scss";
+@import "../../../styles/main/config.scss";
+
 .MainSection {
   display: flex;
+  flex-wrap: wrap;
+  
+  @include breakpoint(md) {
+    flex-wrap: nowrap;
+  }
 }

@@ -3,12 +3,59 @@
 
 .Newsletter {
   width: 30%;
-  padding: rem(36) rem(32);
   flex-shrink: 0;
-
+  width: 100%;
+  background: #F6F6EF;
+  text-align: center;
+  padding: rem(16);
+  
+  @include breakpoint(sm) {
+    padding: rem(36) rem(32);
+  }
+  
+  @include breakpoint(md) {
+    width: 30%;
+    background: white;
+  }
+  
   p {
     font-size: rem(14);
     line-height: rem(18);
     margin-bottom: rem(12);
   }
+  
+  br {
+    display: none;
+    
+    @include breakpoint(md) {
+      display: inline-block;
+    }
+  }
+  
+  form {
+    margin-bottom: rem(20);
+    
+    p {
+      margin-bottom: rem(24);
+    }
+    
+    input {
+      display: block;
+      width: 100%;
+      margin: rem(10) auto;
+      max-width: rem(294);
+    }
+    
+    input[type="submit"] {
+      cursor: pointer;
+      background: $main-color;
+      color: #fff;
+      border: none;
+    }
+  }
+  
+  a {
+    color: $main-color;
+  }
 }
+

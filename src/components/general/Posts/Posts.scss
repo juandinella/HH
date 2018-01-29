@@ -1,6 +1,19 @@
 @import "../../../styles/main/mixins.scss";
+@import "../../../styles/main/config.scss";
 
 .Posts {
   flex-grow: 1;
   padding: 0 rem(32);
+  display: block;
+  
+  @include breakpoint(md) {
+    flex-wrap: wrap;
+    display: flex;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
 }

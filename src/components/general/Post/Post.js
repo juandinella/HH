@@ -14,7 +14,7 @@ const Post = ({votes, title, description,time, author, comments, tags, fp}) =>
       <h2>
         <a href="">{title}</a>
         { 
-          (fp) ? <sup><svg width="12" height="11" viewBox="0 0 12 11"><path fill="#ff6600" d="M6 9l-3.527 1.854.674-3.927-2.853-2.781 3.943-.573 1.763-3.573 1.763 3.573 3.943.573-2.853 2.781.674 3.927z"></path></svg></sup> : ' '
+          (fp) ? <sup><span>This submission has been on Hacker News front page</span><svg width="12" height="11" viewBox="0 0 12 11"><path fill="#ff6600" d="M6 9l-3.527 1.854.674-3.927-2.853-2.781 3.943-.573 1.763-3.573 1.763 3.573 3.943.573-2.853 2.781.674 3.927z"></path></svg></sup> : ' '
         }
       </h2>
       <p>{description}</p>

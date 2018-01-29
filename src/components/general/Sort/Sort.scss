@@ -1,3 +1,128 @@
-.Sort {
+@import "../../../styles/main/mixins.scss";
+@import "../../../styles/main/config.scss";
+
+/* .Sort {
   position: relative;
+  width: 86px;
+  margin-top: rem(-6);
+  
+  strong {
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+    font-size: rem(12);
+    line-height: rem(24);
+    color: #797979;
+    cursor: pointer;
+    z-index: 2;
+    text-align: left;
+    width: 100%;
+    
+    &:after {
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 4px 3px 0 3px;
+      border-color: #797979 transparent transparent transparent;
+      position: absolute;
+      top: 50%;
+      margin-top: rem(-2);
+      right: 0;
+    }
+  }
+  
+  ul {
+    display: block;
+    position: absolute;
+    border: 1px solid #F8F8F8;
+    width: 120%;
+    padding: 36px 10px 8px;
+    top: -12px;
+    left: -10px;
+    border-radius: rem(2);
+    background: #fff;
+    
+    a {
+      display: block;
+      font-size: rem(12);
+      text-transform: uppercase;
+      line-height: rem(26);
+      color: $black;
+      
+      &:hover {
+        color: $main-color;
+      }
+    }
+  }
+  
+  &.on {
+    ul {
+      display: block;
+    }
+  }
+} */
+
+
+.sort {
+  position: relative;
+  
+  &:focus {
+    outline: 0 none;
+  }
+  
+  &.active {
+    border: 1px solid #F8F8F8;
+  }
+  
+  .trigger {
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+    font-size: rem(12);
+    line-height: rem(24);
+    color: #797979;
+    cursor: pointer;
+    z-index: 2;
+    text-align: left;
+    width: 100%;
+    
+    &:after {
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 4px 3px 0 3px;
+      border-color: #797979 transparent transparent transparent;
+      position: absolute;
+      top: 50%;
+      margin-top: rem(-2);
+      right: rem(-12);
+    }
+  }
+  
+  .list {
+    display: block;
+    position: absolute;
+    border: 1px solid #F8F8F8;
+    width: rem(100);
+    padding: 36px 8px 8px;
+    top: -12px;
+    left: -10px;
+    border-radius: rem(2);
+    background: #fff;
+  }
+}
+
+.item {
+  display: block;
+  font-size: rem(12);
+  text-transform: uppercase;
+  line-height: rem(26);
+  color: $black;
+  cursor: pointer;
+  
+  &:hover {
+    color: $main-color;
+  }
 }

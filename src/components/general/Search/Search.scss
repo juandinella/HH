@@ -1,4 +1,5 @@
 @import "../../../styles/main/mixins.scss";
+@import "../../../styles/main/config.scss";
 
 .Search {
   position: relative;
@@ -9,7 +10,7 @@
     
     input {
       width: 100%;
-      max-width: calc(70% - 80px);
+      max-width: none;
       padding-left: rem(26);
       height: rem(32);
       line-height: rem(32);
@@ -18,6 +19,10 @@
       background: #fff;
       box-sizing: border-box;
       font-size: rem(14);
+      
+      @include breakpoint(md) {
+        max-width: calc(70% - 80px);
+      }
       
       &:focus {
         max-width: none;
