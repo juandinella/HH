@@ -8,6 +8,7 @@
     "plop": "^1.9.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.0",
     "rscaffold": "^0.4.0",
     "sass-module-importer": "^1.4.0"

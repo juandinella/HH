@@ -3,7 +3,6 @@ import Post from '../Post/Post'
 import './Posts.css'
 import Sort from '../Sort/Sort'
 
-
 function Posts({posts}) {
   return (
     <div className='Posts'>
