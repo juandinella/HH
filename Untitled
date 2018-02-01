@@ -1,0 +1,4 @@
+const taxtRate = 0.08;
+const spendingThreshold = 200;
+const phonePrice = 99.99;
+const accesoryPrice = 0.99;

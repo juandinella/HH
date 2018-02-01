@@ -2,6 +2,7 @@ import React from 'react'
 import Post from '../Post/Post'
 import './Posts.css'
 import Sort from '../Sort/Sort'
+// import { BrowserRouter as Router, Switch } from 'react-router-dom'
 
 function Posts({posts}) {
   return (

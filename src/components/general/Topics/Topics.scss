@@ -51,6 +51,18 @@
   }
 }
 
+.topic {
+  &.active {
+    > a {
+      color: $main-color;
+    }
+
+    div {
+      display: block;
+    }
+  }
+}
+
 .thumb {
   display: inline-block;
   width: rem(16);

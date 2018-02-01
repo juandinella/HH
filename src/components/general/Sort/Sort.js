@@ -6,29 +6,29 @@ class Sort extends Component {
     expanded: false,
     value: 'Popular'
   }
-  
+
   expand() {
     this.setState({ expanded: true });
   }
-  
+
   collapse() {
     this.setState({ expanded: false });
   }
-  
+
   handleItemClick(e) {
     this.setState({
       expanded: false,
       value: e.target.innerText
     });
   }
-  
+
   handleTriggerClick() {
     this.setState({ expanded: !this.state.expanded });
   }
-  
+
   render () {
     let sort = undefined;
-    
+
     if (this.state.expanded) {
 			sort = (
 				<div className="list">
@@ -40,7 +40,7 @@ class Sort extends Component {
 				</div>
 			);
 		}
-    
+
     return (
       <div className={`sort ${this.state.expanded ? 'active' : ''}`}
         tabIndex="0"
